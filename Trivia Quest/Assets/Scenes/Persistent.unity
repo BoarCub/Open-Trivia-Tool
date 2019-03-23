@@ -1,0 +1,1365 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &1800602662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800602664}
+  - component: {fileID: 1800602663}
+  m_Layer: 0
+  m_Name: DataController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1800602663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800602662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4ad0ef871737d4cafb7a8268fbf815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundIndex: 12
+  allRoundData:
+  - name: FBLA-PBL Goals Easy
+    timeLimitInSeconds: 90
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: How   does   FBLA   help   to   develop   leadership   in   its   members?
+      answers:
+      - answerText: By   allowing   to   participate   in   team   roleplay   events   that   help   foster   the   business   mindset
+        isCorrect: 1
+      - answerText: By   providing   multiple   arrays   of   objective   tests
+        isCorrect: 0
+      - answerText: By   allowing   students   to   conduct   mock   interviews
+        isCorrect: 0
+    - questionText: How   does   FBLA   increase   the   confidence   of   its   members?
+      answers:
+      - answerText: Allows    for    members    to    present    themselves    in    formal    attire
+        isCorrect: 0
+      - answerText: Allows   for   participants   to   participate   in   multiple   presentation   event
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: How   does   FBLA   create   more   interest   in   the   American   business   enterprise?
+      answers:
+      - answerText: By   providing   a   variety   of   objective   tests
+        isCorrect: 0
+      - answerText: By   providing   workshops   during   competitions
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: Which   one(s)   are   FBLA-PBL   goals?
+      answers:
+      - answerText: Encourage   scholarship   and   promote   school   loyalty
+        isCorrect: 1
+      - answerText: Develops   character   and   fosters   nationalism
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: How   does   FBLA   best   help   facilitate   the   transition   from   school   to   work?
+      answers:
+      - answerText: By  exposing   high   school   students   to   business   concepts
+        isCorrect: 1
+      - answerText: By   allowing   them   to   participate   in   team   events
+        isCorrect: 0
+      - answerText: By   letting   them   conduct   presentations
+        isCorrect: 0
+    - questionText: How   does   FBLA   promote   scholarship   and   school   loyalty?
+      answers:
+      - answerText: By   allowing   its   competitors   to   participate   in   multiple   levels   of   competition
+        isCorrect: 0
+      - answerText: By   focusing   on   events   that   require   months   of   preparation
+        isCorrect: 0
+      - answerText: Both them
+        isCorrect: 1
+    - questionText: "Which   of   the   following   isn\u2019t   a   FBLA-PBL   goal"
+      answers:
+      - answerText: Assist   students   in   the   establishment   of   occupational   goals
+        isCorrect: 0
+      - answerText: Encourage   and   practice   money   management
+        isCorrect: 0
+      - answerText: Encourage   members   to   better   themselves   and   focus   on   the   individual
+        isCorrect: 1
+  - name: FBLA-PBL Goals Medium
+    timeLimitInSeconds: 45
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: How   does   FBLA   help   to   develop   leadership   in   its   members?
+      answers:
+      - answerText: By   allowing   to   participate   in   team   roleplay   events   that   help   foster   the   business   mindset
+        isCorrect: 1
+      - answerText: By   providing   multiple   arrays   of   objective   tests
+        isCorrect: 0
+      - answerText: By   allowing   students   to   conduct   mock   interviews
+        isCorrect: 0
+    - questionText: How   does   FBLA   increase   the   confidence   of   its   members?
+      answers:
+      - answerText: Allows    for    members    to    present    themselves    in    formal    attire
+        isCorrect: 0
+      - answerText: Allows   for   participants   to   participate   in   multiple   presentation   event
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: How   does   FBLA   create   more   interest   in   the   American   business   enterprise?
+      answers:
+      - answerText: By   providing   a   variety   of   objective   tests
+        isCorrect: 0
+      - answerText: By   providing   workshops   during   competitions
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: Which   one(s)   are   FBLA-PBL   goals?
+      answers:
+      - answerText: Encourage   scholarship   and   promote   school   loyalty
+        isCorrect: 1
+      - answerText: Develops   character   and   fosters   nationalism
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: How   does   FBLA   best   help   facilitate   the   transition   from   school   to   work?
+      answers:
+      - answerText: By  exposing   high   school   students   to   business   concepts
+        isCorrect: 1
+      - answerText: By   allowing   them   to   participate   in   team   events
+        isCorrect: 0
+      - answerText: By   letting   them   conduct   presentations
+        isCorrect: 0
+    - questionText: How   does   FBLA   promote   scholarship   and   school   loyalty?
+      answers:
+      - answerText: By   allowing   its   competitors   to   participate   in   multiple   levels   of   competition
+        isCorrect: 0
+      - answerText: By   focusing   on   events   that   require   months   of   preparation
+        isCorrect: 0
+      - answerText: Both them
+        isCorrect: 1
+    - questionText: "Which   of   the   following   isn\u2019t   a   FBLA-PBL   goal"
+      answers:
+      - answerText: Assist   students   in   the   establishment   of   occupational   goals
+        isCorrect: 0
+      - answerText: Encourage   and   practice   money   management
+        isCorrect: 0
+      - answerText: Encourage   members   to   better   themselves   and   focus   on   the   individual
+        isCorrect: 1
+  - name: FBLA-PBL Goals Hard
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: How   does   FBLA   help   to   develop   leadership   in   its   members?
+      answers:
+      - answerText: By   allowing   to   participate   in   team   roleplay   events   that   help   foster   the   business   mindset
+        isCorrect: 1
+      - answerText: By   providing   multiple   arrays   of   objective   tests
+        isCorrect: 0
+      - answerText: By   allowing   students   to   conduct   mock   interviews
+        isCorrect: 0
+    - questionText: How   does   FBLA   increase   the   confidence   of   its   members?
+      answers:
+      - answerText: Allows    for    members    to    present    themselves    in    formal    attire
+        isCorrect: 0
+      - answerText: Allows   for   participants   to   participate   in   multiple   presentation   event
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: How   does   FBLA   create   more   interest   in   the   American   business   enterprise?
+      answers:
+      - answerText: By   providing   a   variety   of   objective   tests
+        isCorrect: 0
+      - answerText: By   providing   workshops   during   competitions
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: Which   one(s)   are   FBLA-PBL   goals?
+      answers:
+      - answerText: Encourage   scholarship   and   promote   school   loyalty
+        isCorrect: 1
+      - answerText: Develops   character   and   fosters   nationalism
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: How   does   FBLA   best   help   facilitate   the   transition   from   school   to   work?
+      answers:
+      - answerText: By  exposing   high   school   students   to   business   concepts
+        isCorrect: 1
+      - answerText: By   allowing   them   to   participate   in   team   events
+        isCorrect: 0
+      - answerText: By   letting   them   conduct   presentations
+        isCorrect: 0
+    - questionText: How   does   FBLA   promote   scholarship   and   school   loyalty?
+      answers:
+      - answerText: By   allowing   its   competitors   to   participate   in   multiple   levels   of   competition
+        isCorrect: 0
+      - answerText: By   focusing   on   events   that   require   months   of   preparation
+        isCorrect: 0
+      - answerText: Both them
+        isCorrect: 1
+    - questionText: "Which   of   the   following   isn\u2019t   a   FBLA-PBL   goal"
+      answers:
+      - answerText: Assist   students   in   the   establishment   of   occupational   goals
+        isCorrect: 0
+      - answerText: Encourage   and   practice   money   management
+        isCorrect: 0
+      - answerText: Encourage   members   to   better   themselves   and   focus   on   the   individual
+        isCorrect: 1
+  - name: FBLA History Easy
+    timeLimitInSeconds: 90
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Who   was   the   founder   of   FBLA?
+      answers:
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 1
+      - answerText: Janelle   B.   Couch
+        isCorrect: 0
+      - answerText: Marilyn   Carr
+        isCorrect: 0
+    - questionText: When   was   Phi   Beta   Lambda   created?
+      answers:
+      - answerText: 1956
+        isCorrect: 0
+      - answerText: 1958
+        isCorrect: 1
+      - answerText: 1965
+        isCorrect: 0
+    - questionText: When   was   the   FBLA - Middle   Level   division   formed?
+      answers:
+      - answerText: 1994
+        isCorrect: 1
+      - answerText: 1991
+        isCorrect: 0
+      - answerText: 1992
+        isCorrect: 0
+    - questionText: What   association   assumed   sponsorship   of   FBLA   in   1946?
+      answers:
+      - answerText: National   Council   for   Business   Education
+        isCorrect: 0
+      - answerText: United Business Education Association
+        isCorrect: 1
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: What   was   the   first   FB LA   State   Chapter?
+      answers:
+      - answerText: Iowa
+        isCorrect: 1
+      - answerText: Washington
+        isCorrect: 0
+      - answerText: Ohio
+        isCorrect: 0
+    - questionText: When   was   FB LA   first   called   FB LA?
+      answers:
+      - answerText: 1942
+        isCorrect: 0
+      - answerText: 1940
+        isCorrect: 1
+      - answerText: 1950
+        isCorrect: 0
+    - questionText: "Who   was   FB LA\u2019s   first   full   time   executive   director?"
+      answers:
+      - answerText: Conrad   H.   Hilton
+        isCorrect: 0
+      - answerText: Edward   D.   Miller
+        isCorrect: 1
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 0
+    - questionText: What   was   the   founder's   vision   for   FBLA?
+      answers:
+      - answerText: To   bring   thousands   of   business   clubs   across   America   in   high   schools   and   colleges
+        isCorrect: 1
+      - answerText: To   develop   business   skills   focused   around   economics
+        isCorrect: 0
+      - answerText: To   persuade   more   high   school   and   college   students   to   pursue   business
+          - related   careers
+        isCorrect: 0
+    - questionText: When   did   FBLA - PBL   gain   independent   status   as   a   nonprofit   educational   student   association?
+      answers:
+      - answerText: 1958
+        isCorrect: 0
+      - answerText: 1987
+        isCorrect: 0
+      - answerText: 1969
+        isCorrect: 1
+    - questionText: Where   was   the   first   experimental   chapter   of   FBLA   chartered?
+      answers:
+      - answerText: Johnson   City,   Tennessee
+        isCorrect: 1
+      - answerText: St.   Albans,   West   Virginia
+        isCorrect: 0
+      - answerText: University   of   Northern   Iowa
+        isCorrect: 0
+  - name: FBLA History Medium
+    timeLimitInSeconds: 45
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Who   was   the   founder   of   FBLA?
+      answers:
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 1
+      - answerText: Janelle   B.   Couch
+        isCorrect: 0
+      - answerText: Marilyn   Carr
+        isCorrect: 0
+    - questionText: When   was   Phi   Beta   Lambda   created?
+      answers:
+      - answerText: 1956
+        isCorrect: 0
+      - answerText: 1958
+        isCorrect: 1
+      - answerText: 1965
+        isCorrect: 0
+    - questionText: When   was   the   FBLA - Middle   Level   division   formed?
+      answers:
+      - answerText: 1994
+        isCorrect: 1
+      - answerText: 1991
+        isCorrect: 0
+      - answerText: 1992
+        isCorrect: 0
+    - questionText: What   association   assumed   sponsorship   of   FBLA   in   1946?
+      answers:
+      - answerText: National   Council   for   Business   Education
+        isCorrect: 0
+      - answerText: United Business Education Association
+        isCorrect: 1
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: What   was   the   first   FB LA   State   Chapter?
+      answers:
+      - answerText: Iowa
+        isCorrect: 1
+      - answerText: Washington
+        isCorrect: 0
+      - answerText: Ohio
+        isCorrect: 0
+    - questionText: When   was   FB LA   first   called   FB LA?
+      answers:
+      - answerText: 1942
+        isCorrect: 0
+      - answerText: 1940
+        isCorrect: 1
+      - answerText: 1950
+        isCorrect: 0
+    - questionText: "Who   was   FB LA\u2019s   first   full   time   executive   director?"
+      answers:
+      - answerText: Conrad   H.   Hilton
+        isCorrect: 0
+      - answerText: Edward   D.   Miller
+        isCorrect: 1
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 0
+    - questionText: What   was   the   founder's   vision   for   FBLA?
+      answers:
+      - answerText: To   bring   thousands   of   business   clubs   across   America   in   high   schools   and   colleges
+        isCorrect: 1
+      - answerText: To   develop   business   skills   focused   around   economics
+        isCorrect: 0
+      - answerText: To   persuade   more   high   school   and   college   students   to   pursue   business
+          - related   careers
+        isCorrect: 0
+    - questionText: When   did   FBLA - PBL   gain   independent   status   as   a   nonprofit   educational   student   association?
+      answers:
+      - answerText: 1958
+        isCorrect: 0
+      - answerText: 1987
+        isCorrect: 0
+      - answerText: 1969
+        isCorrect: 1
+    - questionText: Where   was   the   first   experimental   chapter   of   FBLA   chartered?
+      answers:
+      - answerText: Johnson   City,   Tennessee
+        isCorrect: 1
+      - answerText: St.   Albans,   West   Virginia
+        isCorrect: 0
+      - answerText: University   of   Northern   Iowa
+        isCorrect: 0
+  - name: FBLA History Hard
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Who   was   the   founder   of   FBLA?
+      answers:
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 1
+      - answerText: Janelle   B.   Couch
+        isCorrect: 0
+      - answerText: Marilyn   Carr
+        isCorrect: 0
+    - questionText: When   was   Phi   Beta   Lambda   created?
+      answers:
+      - answerText: 1956
+        isCorrect: 0
+      - answerText: 1958
+        isCorrect: 1
+      - answerText: 1965
+        isCorrect: 0
+    - questionText: When   was   the   FBLA - Middle   Level   division   formed?
+      answers:
+      - answerText: 1994
+        isCorrect: 1
+      - answerText: 1991
+        isCorrect: 0
+      - answerText: 1992
+        isCorrect: 0
+    - questionText: What   association   assumed   sponsorship   of   FBLA   in   1946?
+      answers:
+      - answerText: National   Council   for   Business   Education
+        isCorrect: 0
+      - answerText: United Business Education Association
+        isCorrect: 1
+      - answerText: Both   of   them
+        isCorrect: 0
+    - questionText: What   was   the   first   FB LA   State   Chapter?
+      answers:
+      - answerText: Iowa
+        isCorrect: 1
+      - answerText: Washington
+        isCorrect: 0
+      - answerText: Ohio
+        isCorrect: 0
+    - questionText: When   was   FB LA   first   called   FB LA?
+      answers:
+      - answerText: 1942
+        isCorrect: 0
+      - answerText: 1940
+        isCorrect: 1
+      - answerText: 1950
+        isCorrect: 0
+    - questionText: "Who   was   FB LA\u2019s   first   full   time   executive   director?"
+      answers:
+      - answerText: Conrad   H.   Hilton
+        isCorrect: 0
+      - answerText: Edward   D.   Miller
+        isCorrect: 1
+      - answerText: Hamden   L.   Forkner
+        isCorrect: 0
+    - questionText: What   was   the   founder's   vision   for   FBLA?
+      answers:
+      - answerText: To   bring   thousands   of   business   clubs   across   America   in   high   schools   and   colleges
+        isCorrect: 1
+      - answerText: To   develop   business   skills   focused   around   economics
+        isCorrect: 0
+      - answerText: To   persuade   more   high   school   and   college   students   to   pursue   business
+          - related   careers
+        isCorrect: 0
+    - questionText: When   did   FBLA - PBL   gain   independent   status   as   a   nonprofit   educational   student   association?
+      answers:
+      - answerText: 1958
+        isCorrect: 0
+      - answerText: 1987
+        isCorrect: 0
+      - answerText: 1969
+        isCorrect: 1
+    - questionText: Where   was   the   first   experimental   chapter   of   FBLA   chartered?
+      answers:
+      - answerText: Johnson   City,   Tennessee
+        isCorrect: 1
+      - answerText: St.   Albans,   West   Virginia
+        isCorrect: 0
+      - answerText: University   of   Northern   Iowa
+        isCorrect: 0
+  - name: Economics Easy
+    timeLimitInSeconds: 90
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   socialism?
+      answers:
+      - answerText: Corporations control the market
+        isCorrect: 0
+      - answerText: The   government   is   limited   in   its   control,   but   the   economy   is
+          run   by   the   people
+        isCorrect: 0
+      - answerText: Government   owns   and   controls   the   means   of   production
+        isCorrect: 1
+    - questionText: Which of the following describes contractionary fiscal policy?
+      answers:
+      - answerText: Increases   Government   Spending
+        isCorrect: 0
+      - answerText: Decreases   Taxes    ( increases    disposable    income )
+        isCorrect: 0
+      - answerText: Increases   Taxes    ( increases    disposable    income )
+        isCorrect: 1
+    - questionText: Which   type   of   market   control   is   described   by   few   suppliers   and   where   the   firms   have   considerable   influence   over   the   market   price?
+      answers:
+      - answerText: Oligopoly
+        isCorrect: 1
+      - answerText: Olegopoly
+        isCorrect: 0
+      - answerText: Monopoly
+        isCorrect: 0
+    - questionText: Economics   is ...
+      answers:
+      - answerText: Study   of   how   societies   use   their   limited   resources   to   satisfy   the   limitless   wants
+        isCorrect: 0
+      - answerText: the   management   of   scarcity   with   choice
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+    - questionText: What   type   of   warranty   is   it   when   assurances   are   made   in   the   sale   of   a   product   due   to   the   circumstances   of   the   sale?
+      answers:
+      - answerText: Implied   Warranty
+        isCorrect: 1
+      - answerText: Limited   Warranty
+        isCorrect: 0
+      - answerText: Technical   Warranty
+        isCorrect: 0
+    - questionText: Josh   earns   30,000   dollars   as   a   detective   and   10,000   before   taxes   working   as   mall   cop   part   time   on   the   weekends.   His   total   of   40,000   before   taxes   is   called?
+      answers:
+      - answerText: gross   income
+        isCorrect: 0
+      - answerText: taxable   income
+        isCorrect: 0
+      - answerText: adjusted   gross   income
+        isCorrect: 1
+    - questionText: The   FDIC   insures   bank   deposits   in   most   banks   up   to   a   maximum   of
+        ...
+      answers:
+      - answerText: $125,000
+        isCorrect: 0
+      - answerText: $100,000
+        isCorrect: 1
+      - answerText: $75,000
+        isCorrect: 0
+    - questionText: The   amount   you   get   charged   per   writing   a   check   is   called
+        ...
+      answers:
+      - answerText: checking fee
+        isCorrect: 0
+      - answerText: deposit fee
+        isCorrect: 0
+      - answerText: service check
+        isCorrect: 1
+    - questionText: A   non - voting   share   that   pays   a   fixed   dividend   is   called
+        ...
+      answers:
+      - answerText: common   stock
+        isCorrect: 0
+      - answerText: preferred   stock
+        isCorrect: 1
+      - answerText: capital loss
+        isCorrect: 0
+    - questionText: NAFTSA   requires   that   tariffs   on   most   good   produced   and   sold   in   North   America   must   decrease.
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+  - name: Economics Medium
+    timeLimitInSeconds: 45
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   socialism?
+      answers:
+      - answerText: Corporations control the market
+        isCorrect: 0
+      - answerText: The   government   is   limited   in   its   control,   but   the   economy   is
+          run   by   the   people
+        isCorrect: 0
+      - answerText: Government   owns   and   controls   the   means   of   production
+        isCorrect: 1
+    - questionText: Which of the following describes contractionary fiscal policy?
+      answers:
+      - answerText: Increases   Government   Spending
+        isCorrect: 0
+      - answerText: Decreases   Taxes    ( increases    disposable    income )
+        isCorrect: 0
+      - answerText: Increases   Taxes    ( increases    disposable    income )
+        isCorrect: 1
+    - questionText: Which   type   of   market   control   is   described   by   few   suppliers   and   where   the   firms   have   considerable   influence   over   the   market   price?
+      answers:
+      - answerText: Oligopoly
+        isCorrect: 1
+      - answerText: Olegopoly
+        isCorrect: 0
+      - answerText: Monopoly
+        isCorrect: 0
+    - questionText: Economics   is ...
+      answers:
+      - answerText: Study   of   how   societies   use   their   limited   resources   to   satisfy   the   limitless   wants
+        isCorrect: 0
+      - answerText: the   management   of   scarcity   with   choice
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+    - questionText: What   type   of   warranty   is   it   when   assurances   are   made   in   the   sale   of   a   product   due   to   the   circumstances   of   the   sale?
+      answers:
+      - answerText: Implied   Warranty
+        isCorrect: 1
+      - answerText: Limited   Warranty
+        isCorrect: 0
+      - answerText: Technical   Warranty
+        isCorrect: 0
+    - questionText: Josh   earns   30,000   dollars   as   a   detective   and   10,000   before   taxes   working   as   mall   cop   part   time   on   the   weekends.   His   total   of   40,000   before   taxes   is   called?
+      answers:
+      - answerText: gross   income
+        isCorrect: 0
+      - answerText: taxable   income
+        isCorrect: 0
+      - answerText: adjusted   gross   income
+        isCorrect: 1
+    - questionText: The   FDIC   insures   bank   deposits   in   most   banks   up   to   a   maximum   of
+        ...
+      answers:
+      - answerText: $125,000
+        isCorrect: 0
+      - answerText: $100,000
+        isCorrect: 1
+      - answerText: $75,000
+        isCorrect: 0
+    - questionText: The   amount   you   get   charged   per   writing   a   check   is   called
+        ...
+      answers:
+      - answerText: checking fee
+        isCorrect: 0
+      - answerText: deposit fee
+        isCorrect: 0
+      - answerText: service check
+        isCorrect: 1
+    - questionText: A   non - voting   share   that   pays   a   fixed   dividend   is   called
+        ...
+      answers:
+      - answerText: common   stock
+        isCorrect: 0
+      - answerText: preferred   stock
+        isCorrect: 1
+      - answerText: capital loss
+        isCorrect: 0
+    - questionText: NAFTSA   requires   that   tariffs   on   most   good   produced   and   sold   in   North   America   must   decrease.
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+  - name: Economics Hard
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   socialism?
+      answers:
+      - answerText: Corporations control the market
+        isCorrect: 0
+      - answerText: The   government   is   limited   in   its   control,   but   the   economy   is
+          run   by   the   people
+        isCorrect: 0
+      - answerText: Government   owns   and   controls   the   means   of   production
+        isCorrect: 1
+    - questionText: Which of the following describes contractionary fiscal policy?
+      answers:
+      - answerText: Increases   Government   Spending
+        isCorrect: 0
+      - answerText: Decreases   Taxes    ( increases    disposable    income )
+        isCorrect: 0
+      - answerText: Increases   Taxes    ( increases    disposable    income )
+        isCorrect: 1
+    - questionText: Which   type   of   market   control   is   described   by   few   suppliers   and   where   the   firms   have   considerable   influence   over   the   market   price?
+      answers:
+      - answerText: Oligopoly
+        isCorrect: 1
+      - answerText: Olegopoly
+        isCorrect: 0
+      - answerText: Monopoly
+        isCorrect: 0
+    - questionText: Economics   is ...
+      answers:
+      - answerText: Study   of   how   societies   use   their   limited   resources   to   satisfy   the   limitless   wants
+        isCorrect: 0
+      - answerText: the   management   of   scarcity   with   choice
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+    - questionText: What   type   of   warranty   is   it   when   assurances   are   made   in   the   sale   of   a   product   due   to   the   circumstances   of   the   sale?
+      answers:
+      - answerText: Implied   Warranty
+        isCorrect: 1
+      - answerText: Limited   Warranty
+        isCorrect: 0
+      - answerText: Technical   Warranty
+        isCorrect: 0
+    - questionText: Josh   earns   30,000   dollars   as   a   detective   and   10,000   before   taxes   working   as   mall   cop   part   time   on   the   weekends.   His   total   of   40,000   before   taxes   is   called?
+      answers:
+      - answerText: gross   income
+        isCorrect: 0
+      - answerText: taxable   income
+        isCorrect: 0
+      - answerText: adjusted   gross   income
+        isCorrect: 1
+    - questionText: The   FDIC   insures   bank   deposits   in   most   banks   up   to   a   maximum   of
+        ...
+      answers:
+      - answerText: $125,000
+        isCorrect: 0
+      - answerText: $100,000
+        isCorrect: 1
+      - answerText: $75,000
+        isCorrect: 0
+    - questionText: The   amount   you   get   charged   per   writing   a   check   is   called
+        ...
+      answers:
+      - answerText: checking fee
+        isCorrect: 0
+      - answerText: deposit fee
+        isCorrect: 0
+      - answerText: service check
+        isCorrect: 1
+    - questionText: A   non - voting   share   that   pays   a   fixed   dividend   is   called
+        ...
+      answers:
+      - answerText: common   stock
+        isCorrect: 0
+      - answerText: preferred   stock
+        isCorrect: 1
+      - answerText: capital loss
+        isCorrect: 0
+    - questionText: NAFTSA   requires   that   tariffs   on   most   good   produced   and   sold   in   North   America   must   decrease.
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+  - name: Personal Finance Easy
+    timeLimitInSeconds: 90
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   the   formula   I   =   P * R * T   used   for   computing?
+      answers:
+      - answerText: Compound   Interest
+        isCorrect: 0
+      - answerText: Simple   Interest
+        isCorrect: 1
+      - answerText: Periodic   Interest
+        isCorrect: 0
+    - questionText: How   much   of   your   disposable   income   should   you   save   each   pay   period?
+      answers:
+      - answerText: 5%
+        isCorrect: 0
+      - answerText: 10%
+        isCorrect: 1
+      - answerText: 3%
+        isCorrect: 0
+    - questionText: What   does   the   FTC   Regulate?
+      answers:
+      - answerText: Unfair   methods   of   advertising
+        isCorrect: 1
+      - answerText: Unfair   methods   of   funding
+        isCorrect: 0
+      - answerText: Unfair   interest   rates
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   an   important   financial   record   to   keep?
+      answers:
+      - answerText: tax   returns
+        isCorrect: 0
+      - answerText: net   worth   statements
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: In   which   form   does   the   new   employer   direct   the   employer   to   remove   a   quantity   from   taxes   on   each   paycheck?
+      answers:
+      - answerText: W - 4
+        isCorrect: 1
+      - answerText: W - 2
+        isCorrect: 0
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: In   which   form   is   the   wages   an   individual   earned   for   the   year   and   amount   of   income   tax   depicted?
+      answers:
+      - answerText: W - 4
+        isCorrect: 0
+      - answerText: W - 2
+        isCorrect: 1
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: The   Truth - In - Lending   Act   limits   your   liability   when   your   credit   card   is   lost   or   stolen   to   the   first   $
+        ____,   unless   the   card   is   reported   before   used
+      answers:
+      - answerText: $100
+        isCorrect: 0
+      - answerText: $500
+        isCorrect: 0
+      - answerText: $50
+        isCorrect: 1
+    - questionText: Which   is   respective   of   a   regressive   tax   system?
+      answers:
+      - answerText: tax   system   in   which   tax   rate   decreases   as   the   amount   being   taxed   increases
+        isCorrect: 1
+      - answerText: tax   system   where   the   more   money   you   make,   the   greater   percentage   of   tax   you   pay
+        isCorrect: 0
+      - answerText: None of them
+        isCorrect: 0
+    - questionText: In   which   type   of   endorsement   is   it   the   identifies   the   person   or   company   that   the   check   is   being   transferred   to?
+      answers:
+      - answerText: Blank   Endorsement
+        isCorrect: 0
+      - answerText: Complete   Endorsement
+        isCorrect: 0
+      - answerText: Full   Endorsement
+        isCorrect: 1
+    - questionText: "What   is   equal   to   an   individual's   assests  \u2013
+        \ liabilities?"
+      answers:
+      - answerText: net   worth
+        isCorrect: 1
+      - answerText: income
+        isCorrect: 0
+      - answerText: total    worth
+        isCorrect: 0
+  - name: Personal Finance Medium
+    timeLimitInSeconds: 45
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   the   formula   I   =   P * R * T   used   for   computing?
+      answers:
+      - answerText: Compound   Interest
+        isCorrect: 0
+      - answerText: Simple   Interest
+        isCorrect: 1
+      - answerText: Periodic   Interest
+        isCorrect: 0
+    - questionText: How   much   of   your   disposable   income   should   you   save   each   pay   period?
+      answers:
+      - answerText: 5%
+        isCorrect: 0
+      - answerText: 10%
+        isCorrect: 1
+      - answerText: 3%
+        isCorrect: 0
+    - questionText: What   does   the   FTC   Regulate?
+      answers:
+      - answerText: Unfair   methods   of   advertising
+        isCorrect: 1
+      - answerText: Unfair   methods   of   funding
+        isCorrect: 0
+      - answerText: Unfair   interest   rates
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   an   important   financial   record   to   keep?
+      answers:
+      - answerText: tax   returns
+        isCorrect: 0
+      - answerText: net   worth   statements
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: In   which   form   does   the   new   employer   direct   the   employer   to   remove   a   quantity   from   taxes   on   each   paycheck?
+      answers:
+      - answerText: W - 4
+        isCorrect: 1
+      - answerText: W - 2
+        isCorrect: 0
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: In   which   form   is   the   wages   an   individual   earned   for   the   year   and   amount   of   income   tax   depicted?
+      answers:
+      - answerText: W - 4
+        isCorrect: 0
+      - answerText: W - 2
+        isCorrect: 1
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: The   Truth - In - Lending   Act   limits   your   liability   when   your   credit   card   is   lost   or   stolen   to   the   first   $
+        ____,   unless   the   card   is   reported   before   used
+      answers:
+      - answerText: $100
+        isCorrect: 0
+      - answerText: $500
+        isCorrect: 0
+      - answerText: $50
+        isCorrect: 1
+    - questionText: Which   is   respective   of   a   regressive   tax   system?
+      answers:
+      - answerText: tax   system   in   which   tax   rate   decreases   as   the   amount   being   taxed   increases
+        isCorrect: 1
+      - answerText: tax   system   where   the   more   money   you   make,   the   greater   percentage   of   tax   you   pay
+        isCorrect: 0
+      - answerText: None of them
+        isCorrect: 0
+    - questionText: In   which   type   of   endorsement   is   it   the   identifies   the   person   or   company   that   the   check   is   being   transferred   to?
+      answers:
+      - answerText: Blank   Endorsement
+        isCorrect: 0
+      - answerText: Complete   Endorsement
+        isCorrect: 0
+      - answerText: Full   Endorsement
+        isCorrect: 1
+    - questionText: "What   is   equal   to   an   individual's   assests  \u2013
+        \ liabilities?"
+      answers:
+      - answerText: net   worth
+        isCorrect: 1
+      - answerText: income
+        isCorrect: 0
+      - answerText: total    worth
+        isCorrect: 0
+  - name: Personal Finance Hard
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What   is   the   formula   I   =   P * R * T   used   for   computing?
+      answers:
+      - answerText: Compound   Interest
+        isCorrect: 0
+      - answerText: Simple   Interest
+        isCorrect: 1
+      - answerText: Periodic   Interest
+        isCorrect: 0
+    - questionText: How   much   of   your   disposable   income   should   you   save   each   pay   period?
+      answers:
+      - answerText: 5%
+        isCorrect: 0
+      - answerText: 10%
+        isCorrect: 1
+      - answerText: 3%
+        isCorrect: 0
+    - questionText: What   does   the   FTC   Regulate?
+      answers:
+      - answerText: Unfair   methods   of   advertising
+        isCorrect: 1
+      - answerText: Unfair   methods   of   funding
+        isCorrect: 0
+      - answerText: Unfair   interest   rates
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   an   important   financial   record   to   keep?
+      answers:
+      - answerText: tax   returns
+        isCorrect: 0
+      - answerText: net   worth   statements
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: In   which   form   does   the   new   employer   direct   the   employer   to   remove   a   quantity   from   taxes   on   each   paycheck?
+      answers:
+      - answerText: W - 4
+        isCorrect: 1
+      - answerText: W - 2
+        isCorrect: 0
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: In   which   form   is   the   wages   an   individual   earned   for   the   year   and   amount   of   income   tax   depicted?
+      answers:
+      - answerText: W - 4
+        isCorrect: 0
+      - answerText: W - 2
+        isCorrect: 1
+      - answerText: 1040
+        isCorrect: 0
+    - questionText: The   Truth - In - Lending   Act   limits   your   liability   when   your   credit   card   is   lost   or   stolen   to   the   first   $
+        ____,   unless   the   card   is   reported   before   used
+      answers:
+      - answerText: $100
+        isCorrect: 0
+      - answerText: $500
+        isCorrect: 0
+      - answerText: $50
+        isCorrect: 1
+    - questionText: Which   is   respective   of   a   regressive   tax   system?
+      answers:
+      - answerText: tax   system   in   which   tax   rate   decreases   as   the   amount   being   taxed   increases
+        isCorrect: 1
+      - answerText: tax   system   where   the   more   money   you   make,   the   greater   percentage   of   tax   you   pay
+        isCorrect: 0
+      - answerText: None of them
+        isCorrect: 0
+    - questionText: In   which   type   of   endorsement   is   it   the   identifies   the   person   or   company   that   the   check   is   being   transferred   to?
+      answers:
+      - answerText: Blank   Endorsement
+        isCorrect: 0
+      - answerText: Complete   Endorsement
+        isCorrect: 0
+      - answerText: Full   Endorsement
+        isCorrect: 1
+    - questionText: "What   is   equal   to   an   individual's   assests  \u2013
+        \ liabilities?"
+      answers:
+      - answerText: net   worth
+        isCorrect: 1
+      - answerText: income
+        isCorrect: 0
+      - answerText: total    worth
+        isCorrect: 0
+  - name: Advertising Easy
+    timeLimitInSeconds: 90
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Which   type   of   advertising   would   be   most   beneficial   to   a   company   that   just   started?
+      answers:
+      - answerText: Promotional   Advertising
+        isCorrect: 0
+      - answerText: Institutional   Advertising
+        isCorrect: 1
+      - answerText: Transit   Advertising
+        isCorrect: 0
+    - questionText: What   is   AIDA?
+      answers:
+      - answerText: Attention,   Interest,   Desire,   Action
+        isCorrect: 1
+      - answerText: Attract,   Initiate,   Develop,   Action
+        isCorrect: 0
+      - answerText: None   of   them
+        isCorrect: 0
+    - questionText: What   step   is   Evaluating   Alternatives   in   the   5   step   consumer   decision   making   process?
+      answers:
+      - answerText: Step 2
+        isCorrect: 0
+      - answerText: Step 4
+        isCorrect: 0
+      - answerText: Step 3
+        isCorrect: 1
+    - questionText: Which   of   the   following   is   a   reason   that   consumer   will   want   to   buy   a   product?
+      answers:
+      - answerText: Avoidance   of   Pain
+        isCorrect: 0
+      - answerText: Fear   of   loss
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: "Which   C   is   not   one   of   the   4   C\u2019s   of   Communication?"
+      answers:
+      - answerText: Connection
+        isCorrect: 0
+      - answerText: Credibility
+        isCorrect: 0
+      - answerText: Competence
+        isCorrect: 1
+    - questionText: "\u201COur   product   fights   issue\u201D   is   an   example
+        \  of   a ..."
+      answers:
+      - answerText: implied   claim
+        isCorrect: 0
+      - answerText: explicit   claim
+        isCorrect: 0
+      - answerText: express   claim
+        isCorrect: 1
+    - questionText: What   does   the   W   stand   for   in   SWOT   analysis
+      answers:
+      - answerText: weaknesses
+        isCorrect: 1
+      - answerText: ways
+        isCorrect: 0
+      - answerText: worthiness
+        isCorrect: 0
+    - questionText: What   does   the   E   stand   for   in   PEST   analysis?
+      answers:
+      - answerText: Elaborate
+        isCorrect: 0
+      - answerText: Economic
+        isCorrect: 1
+      - answerText: Equity
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   need?
+      answers:
+      - answerText: water
+        isCorrect: 1
+      - answerText: money
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   way   to   advertise   a   business?
+      answers:
+      - answerText: A logo
+        isCorrect: 0
+      - answerText: A sandwich board
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+  - name: Advertising Medium
+    timeLimitInSeconds: 45
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Which   type   of   advertising   would   be   most   beneficial   to   a   company   that   just   started?
+      answers:
+      - answerText: Promotional   Advertising
+        isCorrect: 0
+      - answerText: Institutional   Advertising
+        isCorrect: 1
+      - answerText: Transit   Advertising
+        isCorrect: 0
+    - questionText: What   is   AIDA?
+      answers:
+      - answerText: Attention,   Interest,   Desire,   Action
+        isCorrect: 1
+      - answerText: Attract,   Initiate,   Develop,   Action
+        isCorrect: 0
+      - answerText: None   of   them
+        isCorrect: 0
+    - questionText: What   step   is   Evaluating   Alternatives   in   the   5   step   consumer   decision   making   process?
+      answers:
+      - answerText: Step 2
+        isCorrect: 0
+      - answerText: Step 4
+        isCorrect: 0
+      - answerText: Step 3
+        isCorrect: 1
+    - questionText: Which   of   the   following   is   a   reason   that   consumer   will   want   to   buy   a   product?
+      answers:
+      - answerText: Avoidance   of   Pain
+        isCorrect: 0
+      - answerText: Fear   of   loss
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: "Which   C   is   not   one   of   the   4   C\u2019s   of   Communication?"
+      answers:
+      - answerText: Connection
+        isCorrect: 0
+      - answerText: Credibility
+        isCorrect: 0
+      - answerText: Competence
+        isCorrect: 1
+    - questionText: "\u201COur   product   fights   issue\u201D   is   an   example
+        \  of   a ..."
+      answers:
+      - answerText: implied   claim
+        isCorrect: 0
+      - answerText: explicit   claim
+        isCorrect: 0
+      - answerText: express   claim
+        isCorrect: 1
+    - questionText: What   does   the   W   stand   for   in   SWOT   analysis
+      answers:
+      - answerText: weaknesses
+        isCorrect: 1
+      - answerText: ways
+        isCorrect: 0
+      - answerText: worthiness
+        isCorrect: 0
+    - questionText: What   does   the   E   stand   for   in   PEST   analysis?
+      answers:
+      - answerText: Elaborate
+        isCorrect: 0
+      - answerText: Economic
+        isCorrect: 1
+      - answerText: Equity
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   need?
+      answers:
+      - answerText: water
+        isCorrect: 1
+      - answerText: money
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   way   to   advertise   a   business?
+      answers:
+      - answerText: A logo
+        isCorrect: 0
+      - answerText: A sandwich board
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+  - name: Advertising Hard
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: Which   type   of   advertising   would   be   most   beneficial   to   a   company   that   just   started?
+      answers:
+      - answerText: Promotional   Advertising
+        isCorrect: 0
+      - answerText: Institutional   Advertising
+        isCorrect: 1
+      - answerText: Transit   Advertising
+        isCorrect: 0
+    - questionText: What   is   AIDA?
+      answers:
+      - answerText: Attention,   Interest,   Desire,   Action
+        isCorrect: 1
+      - answerText: Attract,   Initiate,   Develop,   Action
+        isCorrect: 0
+      - answerText: None   of   them
+        isCorrect: 0
+    - questionText: What   step   is   Evaluating   Alternatives   in   the   5   step   consumer   decision   making   process?
+      answers:
+      - answerText: Step 2
+        isCorrect: 0
+      - answerText: Step 4
+        isCorrect: 0
+      - answerText: Step 3
+        isCorrect: 1
+    - questionText: Which   of   the   following   is   a   reason   that   consumer   will   want   to   buy   a   product?
+      answers:
+      - answerText: Avoidance   of   Pain
+        isCorrect: 0
+      - answerText: Fear   of   loss
+        isCorrect: 0
+      - answerText: Both   of   them
+        isCorrect: 1
+    - questionText: "Which   C   is   not   one   of   the   4   C\u2019s   of   Communication?"
+      answers:
+      - answerText: Connection
+        isCorrect: 0
+      - answerText: Credibility
+        isCorrect: 0
+      - answerText: Competence
+        isCorrect: 1
+    - questionText: "\u201COur   product   fights   issue\u201D   is   an   example
+        \  of   a ..."
+      answers:
+      - answerText: implied   claim
+        isCorrect: 0
+      - answerText: explicit   claim
+        isCorrect: 0
+      - answerText: express   claim
+        isCorrect: 1
+    - questionText: What   does   the   W   stand   for   in   SWOT   analysis
+      answers:
+      - answerText: weaknesses
+        isCorrect: 1
+      - answerText: ways
+        isCorrect: 0
+      - answerText: worthiness
+        isCorrect: 0
+    - questionText: What   does   the   E   stand   for   in   PEST   analysis?
+      answers:
+      - answerText: Elaborate
+        isCorrect: 0
+      - answerText: Economic
+        isCorrect: 1
+      - answerText: Equity
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   need?
+      answers:
+      - answerText: water
+        isCorrect: 1
+      - answerText: money
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 0
+    - questionText: Which   of   the   following   is   a   way   to   advertise   a   business?
+      answers:
+      - answerText: A logo
+        isCorrect: 0
+      - answerText: A sandwich board
+        isCorrect: 0
+      - answerText: Both of them
+        isCorrect: 1
+--- !u!4 &1800602664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800602662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
